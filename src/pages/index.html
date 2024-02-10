@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet"  type="text/css" href="/css/index.css">
+    <link href="https://fonts.cdnfonts.com/css/better-grade" rel="stylesheet">
+</head>
+<script>
+    const authorizedPassCodes = ['lassmichrein', 'hellodearfellow', 'pleasedontxssme']
+    const promptResult = prompt('Please enter PassCode.')
+    if(authorizedPassCodes.includes(promptResult)){
+        document.write(`<div class="main">
+        <div class="hero">
+          <h1 class="title">Leon Küßner</h1>
+          <h2 class="subtitle">Passionate Fullstack Software Engineer</h2>
+          <h2 class="cliffhanger">
+            <a
+              target="_blank"
+              type="application/pdf"
+              href="/files/CV_leon_kuessner.pdf"
+            >
+              Curriculum Vitae
+            </a>
+          </h2>
+        </div>
+        <img src="/images/visual.jpeg" class="splash-image" alt="splash" />
+        </div>`)
+    } else {
+        alert('Wrong PassCode, please retry.')
+        location.reload()
+    }
+</script>
+<body>
+</body>
+</html>
